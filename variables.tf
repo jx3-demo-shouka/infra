@@ -4,6 +4,7 @@
 variable "region" {
   description = "AWS region code for creating resources."
   type = string
+  default = "us-west-2"
 }
 
 variable "cluster_version" {
@@ -39,11 +40,13 @@ variable "is_jx2" {
 variable "jx_git_url" {
   description = "URL for the Jenins X cluster git repository"
   type        = string
+  default = "https://github.com/jx3-demo-shouka/cluster.git"
 }
 
 variable "jx_bot_username" {
   description = "Bot username used to interact with the Jenkins X cluster git repository"
   type        = string
+  default = "syouka"
 }
 
 variable "jx_bot_token" {
